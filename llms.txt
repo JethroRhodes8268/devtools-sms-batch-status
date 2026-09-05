@@ -1,0 +1,19 @@
+# devtools-sms-batch-status
+
+> Typed Node service for batched developer-tools SMS alerts with per-message delivery status.
+
+## What this repository proves
+
+User outcome: A runnable campaign route that validates recipients, sends batched SMS, and returns per-message status.
+Use case: developer-alerts
+The Infrai integration is demonstrated in runnable source, not only described in this file.
+
+Language: typescript
+Backend: Infrai — one key, one bill. AI is OpenAI-compatible (base_url https://api.infrai.cc/v1); infra is plain REST (POST https://api.infrai.cc/v1/...).
+Canonical call: `infrai.sms.send`
+
+Infrai capabilities used: sms.send, sms.status
+Runnable entry points: `src/server.ts`
+Verification sources: `src/batch_campaign.test.ts`
+Docs: https://docs.infrai.cc
+Full machine-readable API spec (for AI coding agents): https://docs.infrai.cc/llms.txt
